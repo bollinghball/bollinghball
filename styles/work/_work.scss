@@ -1,0 +1,17 @@
+@mixin base() {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.work {
+    @include base;
+
+    @import 'content';
+    @import 'heading';
+    @import 'list';
+    @import 'item';
+    @import 'items';
+    @import 'summary';
+    @import 'image';
+    @import 'type';
+}

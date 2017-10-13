@@ -1,0 +1,137 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+:first-child {
+	margin-top: 0;
+}
+
+:last-child {
+	margin-bottom: 0;
+}
+
+body {
+	background: #fff;
+	color: #706d6d;
+	font-family: 'Open Sans', serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin: 0;
+}
+
+h1 {
+	color: #9B153E;
+	font-family: 'Bitter', 'Helvetica', sans-serif;
+	font-size: 2.8rem;
+	@media all and (min-width: 768px) {
+		font-size: 3.6rem;
+	}
+}
+
+h2 {
+	color: #706d6d;
+	font-family: 'Bitter', 'Helvetica', sans-serif;
+	font-size: 2rem;
+	@media all and (min-width: 768px) {
+		font-size: 2.8rem;
+	}
+}
+
+a {
+	color: #706d6d;
+	font-weight: 600;
+}
+
+.page-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 5vh;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+	width: 13px;
+	height: 13px;
+	border-bottom: 2px solid #706d6d;
+	border-right: 2px solid #706d6d;
+	z-index: 9;
+	-webkit-transform: translate(-50%, 0%) rotate(45deg);
+	-moz-transform: translate(-50%, 0%) rotate(45deg);
+	transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation: fade_move_down 2s ease-in-out infinite;
+	animation: fade_move_down 2s ease-in-out infinite;
+	}
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+	0% {
+		-webkit-transform: translate(0, -10px) rotate(45deg);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translate(0, 10px) rotate(45deg);
+		opacity: 0;
+	}
+}
+@-moz-keyframes fade_move_down {
+	0% {
+		-moz-transform: translate(0, -10px) rotate(45deg);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-moz-transform: translate(0, 10px) rotate(45deg);
+		opacity: 0;
+	}
+}
+@keyframes fade_move_down {
+	0% {
+		transform: translate(0, -10px) rotate(45deg);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0, 10px) rotate(45deg);
+		opacity: 0;
+	}
+}
+
+
+.work__description {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+  }
+
+  .work__sentence {
+	background-color: #9B153E;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }

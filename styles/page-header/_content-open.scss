@@ -1,0 +1,32 @@
+@mixin base() {
+
+    color: #fff;
+    text-decoration: none;
+    
+    &:visited {
+        color: #626065;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: #0E5A95;
+        text-decoration: none;
+    }
+    
+    &:active {
+        color: #0E5A95;
+        text-decoration: none;
+    }
+
+    [data-content-open="true"] & {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+&__content-open {
+    @include base;
+}

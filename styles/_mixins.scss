@@ -1,0 +1,55 @@
+///* ========================================================================
+//   FULL BLEED
+//   ======================================================================== */
+
+// Mixin to extend background of an element/component to fill the viewport while...
+// restricting the content to the max-width value set in the theme
+@mixin full-bleed($additional-padding: 0px) {
+    @include full-width();
+
+    padding-left: calc(#{$additional-padding} + (100vw - 100%) / 2);
+    padding-right: calc(#{$additional-padding} + (100vw - 100%) / 2);
+}
+
+///* ========================================================================
+//   FULL WIDTH
+//   ======================================================================== */
+
+// Mixin to extend of an element or component to full width of the viewport
+// Note: this mixin will extend content to the edges as well...
+// To extend the element but contain content see the Full-Bleed mixin
+@mixin full-width() {
+    margin-left: calc(0px - (100vw - 100%) / 2);
+    margin-right: calc(0px - (100vw - 100%) / 2);
+}
+
+///* ========================================================================
+//   SCREEN READER ONLY
+//   ======================================================================== */
+
+// Mixin to quickly apply accessible hiding to elements.
+@mixin sr-only() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+@mixin dark-overlay{
+    &:after{
+        content: "";
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1; 
+    // Take note of this negative z-index and copare to each article's positive z-index. This helps your content to show up over the overlay.
+     top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}

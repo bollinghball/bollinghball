@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bolling's portfolio</title>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="bower_components/made-with-love/made-with-love.html">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.min.css">
+</head>
+<body>
+    <div class="skip-nav">
+        <a href="#mainContent" class="skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+    </div>
+    <header class="page-header">
+        <div class="page-header__branding">
+            <a href="#" class="logo-link" aria-label="go to home page">
+                <img class="logo-link__image" src="../images/logo.png" alt="Bolling logo" />
+            </a>
+        </div>
+        <div class="page-header__content-controls">
+            <a class="page-header__content-open" aria-label="open menu" href="#"><span class="icon--menu"></span></a>
+            <a class="page-header__content-close" aria-label="close menu" href="#"><span class="icon--close"></span></a>
+        </div>
+        <div class="page-header__content">
+            <div class="page-header__navigation">
+                <nav class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                    <h1 class="primary-nav__heading">Primary Navigation</h1>
+                    <ul class="primary-nav__list">
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#about">ABOUT</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#work">WORK</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#contact">CONTACT</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="/blog.html">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__navigation">
+            <nav class="footer-nav" role="navigation" aria-label="footer">
+                <h1 class="footer-nav__heading sr-only">Footer Navigation</h1>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#about" aria-label="">ABOUT</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#work" aria-label="">WORK</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#contact" aria-label="">CONTACT</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="/blog.html">BLOG</a></li>
+                </ul>
+            </nav>
+        </div>
+        <small class="willow-page-footer__copyright">© 2017 Bolling Ball All Rights Reserved.</small>
+    </footer>
+    <made-with-love name="Bolling Ball" url="http://bollinghball.com" color="#F62459"></made-with-love>
+    <script src="scripts/site.min.js"></script>
+</body>
+</html>

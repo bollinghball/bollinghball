@@ -1,0 +1,11 @@
+@mixin base() {
+    display: flex;
+    flex-basis: 33%;
+    flex-direction: column;
+    height: 25rem;
+    margin-top: 10rem;
+}
+
+&__type {
+    @include base;
+}

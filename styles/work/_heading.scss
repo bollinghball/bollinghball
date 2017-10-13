@@ -1,0 +1,17 @@
+@mixin base() {
+    border-bottom: 5px solid #f4bc04;
+    line-height: 0.1em;
+    margin: 0 auto;    
+    text-align: center; 
+    text-transform: uppercase;
+    width: 95rem;
+}
+
+&__heading {
+    @include base;
+
+    &--line {
+        background:#fff; 
+        padding:0 10px; 
+    }
+}

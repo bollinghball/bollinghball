@@ -1,0 +1,15 @@
+@mixin base() {
+    background-color:  #fff2f6;
+    padding-top: 5rem;
+}
+
+.about {
+    @include base;
+    @include full-bleed();
+    
+    @import 'image';
+    @import 'content';
+    @import 'images';
+    @import 'heading';
+    @import 'section';
+}

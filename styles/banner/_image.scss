@@ -1,0 +1,13 @@
+@mixin base() {
+    background-image: url("../images/bolling.jpg");
+    background-repeat: no-repeat;
+    background-position: 70% 15%;
+    background-size: cover;
+    height: 35rem;
+    width: 30rem;
+    border-radius: 50%;
+}
+
+&__image {
+    @include base;
+}

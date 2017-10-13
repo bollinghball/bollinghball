@@ -1,0 +1,22 @@
+@mixin base() {    
+    color: #706d6d;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    padding-bottom: 50rem;
+    padding-top: 15rem;
+
+}
+
+.banner {
+    @include base;
+    @include full-bleed;
+
+    @import "heading";
+    @import "content";
+    @import "description";
+    @import "actions";
+    @import "action";
+    @import 'image';
+    @import 'images';
+}

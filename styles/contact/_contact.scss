@@ -1,0 +1,15 @@
+@mixin base() {
+    background-color: #fff2f6;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+
+.contact {
+    @include base;
+    @include full-bleed();
+
+    @import 'content';
+    @import 'heading';
+    @import 'list';
+}

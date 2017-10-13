@@ -1,0 +1,19 @@
+@mixin base() {
+    // background-color: #fff2f6;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    // padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 12px;
+    padding-top: 12px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+
+&__branding {
+    @include base;
+}

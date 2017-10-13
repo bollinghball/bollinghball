@@ -1,0 +1,43 @@
+@mixin base() {
+    background-color: initial;
+    color: #9B153E;
+    display: block;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    text-decoration: none;
+
+    &:hover {
+        // background-color: $component-primary-nav-link-background-color-hover;
+        // color: $component-primary-nav-link-color-hover;
+        text-decoration: none;
+    }
+
+    &:active {
+        // background-color: $component-primary-nav-link-background-color-active;
+        // color: $component-primary-nav-link-color-active;
+    }
+
+    &:visited {
+        // color: $component-primary-nav-link-color-visited;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+    }
+}
+
+&__link {
+    @include base;
+
+    &--active {
+        @include base;
+        // background-color: $component-primary-nav-link-background-color-active;
+        // color: $component-primary-nav-link-color-active;
+    }
+}

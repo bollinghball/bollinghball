@@ -1,0 +1,18 @@
+@mixin base() {
+    margin-right: 2rem;
+    position: relative;
+
+    &:hover .work__image {
+        opacity: 0.3;
+    }
+
+    &:hover .work__description {
+        opacity: 1;
+    }
+        
+    }
+
+&__item {
+    @include base;
+
+}

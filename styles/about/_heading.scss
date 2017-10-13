@@ -1,0 +1,11 @@
+@mixin base() {
+    border-bottom: solid 5px #f4bc04;
+    text-align: left;
+    text-transform: uppercase;
+    width: 25rem;
+
+}
+
+&__heading {
+    @include base;
+}
