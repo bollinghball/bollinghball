@@ -1,16 +1,17 @@
 @mixin base() {
     background-color: #333;
     color: #fff;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-align: left;
+    padding: 4rem;
+    text-align: center;
+    
+    @media all and (min-width: 768px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .contact {
     @include base;
     @include full-bleed();
 
-    @import 'content';
-    @import 'heading';
-    @import 'list';
 }

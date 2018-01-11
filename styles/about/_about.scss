@@ -1,16 +1,24 @@
 @mixin base() {
     background-color:  #333;
     color: #fff;
+    display: flex;
+    padding-bottom: 5rem;
     padding-top: 5rem;
+    
+    @media all and (min-width: 778px) {
+        @include full-bleed();
+
+        justify-content: center;
+    }
 }
 
 .about {
     @include base;
-    @include full-bleed();
     
     @import 'image';
     @import 'content';
     @import 'images';
     @import 'heading';
+    @import 'list';
     @import 'section';
 }

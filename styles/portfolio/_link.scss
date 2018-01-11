@@ -1,0 +1,15 @@
+@mixin base() {
+    color: #f4bc04;
+
+    &:hover {
+        color: #ccc;
+    }
+
+    &:focus {
+        color: #fff;
+    }
+}
+
+&__link {
+    @include base;
+}

@@ -1,9 +1,10 @@
 @mixin base() {
-    display: flex;
-    height: 12rem;
-    margin-top: 5rem;
+    padding: 2rem;
     text-align: left;
-    width: auto;
+
+    @media all and (min-width: 992px) {
+        padding: 0;
+    }
 }
 
 &__content {

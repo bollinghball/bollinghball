@@ -6,8 +6,10 @@
 .work {
     @include base;
 
+    @import 'actions';
     @import 'content';
     @import 'heading';
+    @import 'link';
     @import 'list';
     @import 'item';
     @import 'items';

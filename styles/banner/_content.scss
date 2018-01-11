@@ -1,9 +1,16 @@
 @mixin base() {
-    // align-items: flex-start;
-    // display: flex;
-    // flex-direction: column;
-    // margin-right: 24px;
-    
+    background-color: #fff;
+    padding: 7rem;
+    width: 50rem;
+
+    @media all and (min-width: 550px) {
+        width: 60rem;
+    }
+
+    @media all and (min-width: 768px) {
+        padding: 5rem;
+        width: 50rem;
+    }
 }
 
 &__content {

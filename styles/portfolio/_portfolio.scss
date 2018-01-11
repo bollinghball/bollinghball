@@ -1,0 +1,9 @@
+@mixin base() {
+
+}
+
+.portfolio {
+    @include base;
+
+    @import 'link';
+}

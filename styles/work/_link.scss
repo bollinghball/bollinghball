@@ -1,0 +1,13 @@
+@mixin base() {
+    margin-bottom: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+&__link {
+    @include base;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

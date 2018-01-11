@@ -1,10 +1,12 @@
 @mixin base() {    
-    color: #706d6d;
+    background-color: #E6E6E6;
     display: flex;
-    height: 50vh;
     justify-content: center;
-    padding-bottom: 50rem;
-    padding-top: 15rem;
+    
+    @media all and (min-width: 768px) {
+        padding-bottom: 20rem;
+        padding-top: 15rem;
+    }
 
 }
 
@@ -13,6 +15,7 @@
     @include full-bleed;
 
     @import "heading";
+    @import "container";
     @import "content";
     @import "description";
     @import "actions";
