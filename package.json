@@ -5,5 +5,8 @@
     },
     "scripts": {
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
+    },
+    "dependencies": {
+        "acorn": "^6.1.1"
     }
 }
