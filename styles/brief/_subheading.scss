@@ -1,0 +1,7 @@
+@mixin base() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+&__subheading {
+    @include base;
+}

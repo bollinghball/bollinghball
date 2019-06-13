@@ -1,7 +1,7 @@
 @mixin base() {
-    height: 20rem;
+    padding-top: 2rem;
 }
 
-&__image {
+&__container {
     @include base;
 }

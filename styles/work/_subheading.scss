@@ -1,0 +1,13 @@
+@mixin base() {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-align: left;
+
+}
+
+&__subheading {
+    @include base;
+
+
+}

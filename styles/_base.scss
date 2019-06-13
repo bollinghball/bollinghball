@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background: #fff;
-	color: #706d6d;
+	background: #333;
+	color: #fff;
 	font-family: 'Open Sans', serif;
 	font-size: 1.8rem;
 	font-weight: 300;
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-	color: #333;
+	color: #fff;
 	font-family: 'Bitter', 'Helvetica', sans-serif;
 	font-size: 2.8rem;
 	@media all and (min-width: 768px) {
@@ -40,7 +40,7 @@ h2 {
 	font-family: 'Bitter', 'Helvetica', sans-serif;
 	font-size: 2rem;
 	@media all and (min-width: 768px) {
-		font-size: 2.8rem;
+		font-size: 2.2rem;
 	}
 }
 
@@ -62,7 +62,7 @@ p {
 .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 5vh;
+	bottom: 65%;
 	display: block;
 	text-align: center;
 	font-size: 20px;
@@ -71,8 +71,8 @@ p {
 	text-shadow: 0;
 	width: 13px;
 	height: 13px;
-	border-bottom: 2px solid #706d6d;
-	border-right: 2px solid #706d6d;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
 	z-index: 9;
 	-webkit-transform: translate(-50%, 0%) rotate(45deg);
 	-moz-transform: translate(-50%, 0%) rotate(45deg);
@@ -123,15 +123,15 @@ p {
 }
 
 
-.work__description {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%)
-  }
+// .work__description {
+// 	transition: .5s ease;
+// 	opacity: 0;
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// 	-ms-transform: translate(-50%, -50%)
+//   }
 
   .work__sentence {
 	background-color: #333;
@@ -172,4 +172,11 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-  }
+	}
+
+	.border {
+		border-bottom: 5px solid #f6d3e5;
+		margin: 0 auto;
+		margin-bottom: 5rem;
+		width: 25%;
+	}

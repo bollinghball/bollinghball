@@ -1,9 +1,7 @@
 @mixin base() {
-    padding: 5rem;
     text-align: left;
-    
 }
 
-&__content {
+&__description {
     @include base;
 }

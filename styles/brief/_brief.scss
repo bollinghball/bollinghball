@@ -12,16 +12,10 @@
     }
 }
 
-.about {
+.brief {
     @include base;
     
-    @import 'button';
-    @import 'container';
     @import 'content';
     @import 'heading';
-    @import 'image';
-    @import 'images';
-    @import 'list';
-    @import 'section';
     @import 'subheading';
 }

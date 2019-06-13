@@ -1,0 +1,19 @@
+@mixin base() {
+    background-color: #333;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #fff;
+        border: 2px solid #333;
+        color: #333;
+        cursor: pointer;
+    }
+}
+
+&__button {
+    @include base;
+}

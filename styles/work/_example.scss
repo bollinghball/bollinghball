@@ -1,11 +1,9 @@
 @mixin base() {
     display: flex;
-    flex-basis: 33%;
     flex-direction: column;
-    height: 25rem;
-    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
-&__type {
+&__example {
     @include base;
 }

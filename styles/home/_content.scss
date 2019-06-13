@@ -1,7 +1,8 @@
 @mixin base() {
-    list-style: none;
+    padding: 5rem;
+
 }
 
-&__list {
+&__content {
     @include base;
 }

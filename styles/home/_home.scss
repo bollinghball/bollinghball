@@ -1,0 +1,15 @@
+@mixin base() {    
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-content: center;
+}
+
+.home {
+    @include base;
+    // @include full-bleed;
+
+    @import 'content';
+    @import 'container';
+    @import 'image';
+    @import 'heading';
+}

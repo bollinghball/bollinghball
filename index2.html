@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bolling's portfolio</title>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="bower_components/made-with-love/made-with-love.html">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="site.min.css">
+</head>
+<body>
+    <div class="skip-nav">
+        <a href="#mainContent" class="skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+    </div>
+    <header class="page-header">
+        <div class="page-header__branding">
+            <a href="#" class="logo-link" aria-label="go to home page">
+                <img class="logo-link__image" src="../images/name.png" alt="Bolling logo" />
+            </a>
+        </div>
+        <div class="page-header__content-controls">
+            <a class="page-header__content-open" aria-label="open menu" href="#"><span class="icon--menu"></span></a>
+            <a class="page-header__content-close" aria-label="close menu" href="#"><span class="icon--close"></span></a>
+        </div>
+        <div class="page-header__content">
+            <div class="page-header__navigation">
+                <nav class="primary-nav" role="navigation" aria-label="Primary Navigation">
+                    <h1 class="primary-nav__heading">Primary Navigation</h1>
+                    <ul class="primary-nav__list">
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#about">ABOUT</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#work">WORK</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#contact">CONTACT</a></li>
+                        <!-- <li class="primary-nav__item"><a class="primary-nav__link" href="/blog.html">BLOG</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="banner" role="region">
+            <div class="banner__container">
+                <div class="banner__content">	
+                    <h1 class="banner__heading"><img class="banner__heading-icon" src="" alt="">hi. i'm bolling ball.</h1>
+                    <p class="banner__description">I'm an Advertising major with a love for art, turned Front-end developer, with an extensive customer service background.</p>
+                    <p class="banner__description">(oh. yep. you read that right. and yes, it's pronounced bowling.)</p>
+                </div>
+                <div class="banner__image" />				
+            </div>
+            <a class="smooth-scroll" href="#about">
+                <div class="scroll-down"></div>
+            </a>
+        </section>
+        <main class="page-content" role="main">
+            <section class="section">
+                <div id="about" class="about">
+                    <!-- <h1 class="about__heading">About</h1> -->
+                    <div class="about__content">
+                        <p>Currently working as a front-end developer in Columbia, SC.</p>
+                        <p>When I don't have my nose inches from the computer screen, you can find me:</p>
+                        <ul class="about__list">
+                            <li>a. reading</li>
+                            <li>b. playing with our baby girls (two of the sweetest, most annoying dogs you'll ever meet)</li>
+                            <li>c. attempting to bake.</li>
+                            <li>d. none of the above. (My husband keeps me busy with his toy company.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="work">
+                <!-- <h1 class="work__heading"><span class="work__heading--line">Work</span></h1> -->
+                <div class="work__content">
+                    <div class="work__items">
+                        <div class="work__item">
+                            <img src="https://bollinghball.github.io/bollinghball/images/rumblelab.png" class="work__image" alt="RumbleLab"/>
+                                <div class="work__description">
+                                    <div class="work__actions">
+                                        <a class="work__link" href="http://www.rumblelab.com" target="_blank"><p class="work__sentence">Live</p></a>
+                                        <a class="work__link" href="http://www.github.com/bollinghball/RL" target="_blank"><p class="work__sentence">Code</p></a>
+                                    </div>
+                                    <p class="work__explanation">Full redesign, development and hosting of rumblelab.com</p>
+                                </div>
+                            
+                        </div>
+                        <div class="work__item">
+                            <img src="https://bollinghball.github.io/bollinghball/images/brand.png" class="work__image overlay" alt="Unum Brand Guildlines"/>
+                            <div class="work__description">
+                                <div class="work__actions">
+                                    <a class="work__link" href="brand.unumux.com/unum" target="_blank"><p class="work__sentence">Live</p></a>
+                                    <a class="work__link" href="http://www.github.com/unumux/brand" target="_blank"><p class="work__sentence">Code</p></a>
+                                </div>
+                                <p class="work__explanation">Redesign and development of Unum Brand site.</p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <img src="https://bollinghball.github.io/bollinghball/images/willow.png" class="work__image" alt="Willow"/>
+                            <div class="work__description">
+                                <div class="work__actions">
+                                    <a class="work__link" href="https://unumux.github.io/willow-testing-site/" target="_blank"><p class="work__sentence">Live</p></a>
+                                    <a class="work__link" href="http://www.github.com/unumux/willow" target="_blank"><p class="work__sentence">Code</p></a>
+                                </div>
+                                <p class="work__explanation">Assist in the research and development of the first company-wide, open source framework, Willow, a branch of the Arbor system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__items">
+                        <div class="work__item">
+                            <img src="../images/wodworkhome.png" class="work__image" alt="Fibber"/>
+                            <div class="work__description">
+                                <div class="work__actions">
+                                    <a class="work__link" href="https://github.com/bollinghball/wodwork/tree/master/wodwork" target="_blank"><p class="work__sentence">Code</p></a>
+                                </div>
+                                <p class="work__explanation">A work in progress, but a first attempt at using and understanding React.</p>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                           <img src="https://bollinghball.github.io/bollinghball/images/washco.png" class="work__image" alt="The Wash Collective"/>
+                            <div class="work__description">
+                                <div class="work__actions">
+                                    <a class="work__link" href="https://github.com/bollinghball/thewashcollective" target="_blank"><p class="work__sentence">Code</p></a>
+                                </div>
+                                <p class="work__explanation">Learning the structure of bootstrap templates and exploring the use of Shopify integrations for e-commerce sites.</p>  
+                            </div>
+                        </div>
+                        <div class="work__item">
+                           <img src="https://bollinghball.github.io/bollinghball/images/springgreen.png" class="work__image" alt="Spring Green"/>
+                            <div class="work__description">
+                                <div class="work__actions">
+                                    <a class="work__link" href="https://spring-green.herokuapp.com" target="_blank"><p class="work__sentence">Live</p></a>
+                                    <a class="work__link" href="https://github.com/bollinghball/spring-green" target="_blank"><p class="work__sentence">Code</p></a>
+                                </div>
+                               <p class="work__explanation">An app to help remind you to water plants. Explores API, route and hosting processes.</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <div class="contact">
+                    <p>You can check out my <a href="www.github.com/bollinghball" class="portfolio__link">Github</a>, stalk me on <a href="https://www.instagram.com/winston_and_ann/" class="portfolio__link">Instagram</a> or feel free to just send me an <a class="portfolio__link" href="mailto:bollinghball@gmail.com" targert="_blank">email</a>.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer" role="contentinfo">
+            <div class="page-footer__navigation">
+                <nav class="footer-nav" role="navigation" aria-label="footer">
+                    <h1 class="footer-nav__heading sr-only">Footer Navigation</h1>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#about" aria-label="">ABOUT</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#work" aria-label="">WORK</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#contact" aria-label="">CONTACT</a></li>
+                        <!-- <li class="footer-nav__item"><a class="footer-nav__link" href="/blog.html">BLOG</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <small class="willow-page-footer__copyright">© 2018 Bolling Ball All Rights Reserved.</small>
+        </footer>
+    </div>  
+    <made-with-love name="Bolling Ball" url="http://bollinghball.com" color="#F62459"></made-with-love>
+    <script src="scripts/site.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@mixin base() {    
+    display: flex;
+    align-content: center;
+}
+
+.intro {
+    @include base;
+    // @include full-bleed;
+
+    @import 'content';
+    @import 'heading';
+}

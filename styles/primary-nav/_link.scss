@@ -1,6 +1,6 @@
 @mixin base() {
     background-color: initial;
-    color: #333;
+    color: #fff;
     display: block;
     padding-bottom: 24px;
     padding-left: 24px;
@@ -12,6 +12,7 @@
         // background-color: $component-primary-nav-link-background-color-hover;
         // color: $component-primary-nav-link-color-hover;
         text-decoration: none;
+        border-bottom: 5px solid #f6d3e5;
     }
 
     &:active {

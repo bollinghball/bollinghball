@@ -1,8 +1,7 @@
 @mixin base() {
-    border-bottom: 5px solid #8F285A;
-    color: #333;
+    border-bottom: 5px solid #f6d3e5;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    width: 40%;
 }
 
 &__heading {

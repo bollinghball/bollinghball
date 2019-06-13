@@ -1,0 +1,9 @@
+@mixin base() {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+&__title {
+    @include base;
+}

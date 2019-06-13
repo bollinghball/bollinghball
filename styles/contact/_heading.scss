@@ -1,8 +1,10 @@
 @mixin base() {
-    border-bottom: 5px solid #8F285A;
+    border-top: 7px solid #8F285A;
     color: #333;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    margin: 0 auto;
+    padding-top: 5rem;
+    width: 50%;
 }
 
 &__heading {

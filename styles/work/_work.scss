@@ -1,6 +1,7 @@
 @mixin base() {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    text-align: center;
 }
 
 .work {
@@ -8,12 +9,11 @@
 
     @import 'actions';
     @import 'content';
+    @import 'description';
+    @import 'example';
     @import 'heading';
     @import 'link';
-    @import 'list';
-    @import 'item';
-    @import 'items';
-    @import 'summary';
+    @import 'subheading';
     @import 'image';
-    @import 'type';
+    @import 'title';
 }
